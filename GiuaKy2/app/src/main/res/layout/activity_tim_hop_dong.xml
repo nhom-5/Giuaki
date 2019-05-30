@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số hợp đồng"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/soHD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="số hợp đồng..."
+                android:lines="1"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã xe"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/maXE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mã xe..."
+                android:lines="1"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên khách hàng"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/tenKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập tên khách hàng..."
+                android:lines="1"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày hợp đồng"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ngayHD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập ngày..."
+                android:lines="1"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số ngày thuê"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/songaythue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập số ngày thuê..."
+                android:lines="1"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/gia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập giá..."
+                android:lines="1"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sửa" />
+
+            <Button
+                android:id="@+id/btnXoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xóa" />
+
+            <Button
+                android:id="@+id/btnTimkiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tìm Kiếm" />
+
+            <Button
+                android:id="@+id/btnLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load lại" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
